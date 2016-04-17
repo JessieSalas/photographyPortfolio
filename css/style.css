@@ -10,14 +10,14 @@ Primary style
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 95.5%;
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Slabo 27px", serif;
+  font-size: 2.6rem;
+  font-family: 'Raleway', sans-serif;
   color: #ffffff;
-  background-color: #131d20;
+  background-color: #282b2f;
 }
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -32,10 +32,14 @@ body::before {
 }
 
 a {
-  color: #e3ca76;
+  color: #264d7e;
   text-decoration: none;
+  font-size:1.5rem;
 }
-
+a:hover {
+      color: white ;
+      background-color: #264d7e;
+    }
 /* -------------------------------- 
 
 Main Components 
@@ -90,7 +94,7 @@ Main Components
 .cd-section:first-of-type .cd-block {
   visibility: visible;
   height: 100vh;
-  background-color: #263b40;
+  background-color: #264d7e;
 }
 @media only screen and (min-width: 1170px) {
   .cd-block {
