@@ -24,7 +24,7 @@ body::before {
   content: 'mobile';
   display: none;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 100px) {
   body::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
@@ -41,7 +41,7 @@ a {
 Main Components 
 
 -------------------------------- */
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 100px) {
   .cd-section {
     height: 100vh;
   }
@@ -64,7 +64,7 @@ Main Components
     font-size: 3.2rem;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 100px) {
   .cd-section h1 {
     font-size: 4.2rem;
   }
@@ -92,7 +92,7 @@ Main Components
   height: 100vh;
   background-color: #263b40;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 100px) {
   .cd-block {
     position: fixed;
     width: 100%;
@@ -140,7 +140,7 @@ Main Components
   background-image: url("../img/first.jpg");
   background-size: cover;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 100px) {
   .cd-half-block {
     height: 100vh !important;
     width: 50%;
@@ -221,8 +221,28 @@ Main Components
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 100px) {
   .cd-vertical-nav {
     display: block;
   }
+}
+
+.myButton {
+    background-color:#256ce6;
+    border:1px solid #4e6096;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:17px;
+    padding:1% 2%;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+    background-color:#034ba3;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
 }
